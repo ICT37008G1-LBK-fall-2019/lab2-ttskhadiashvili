@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lab 2/5</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <!-- page content -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 2/5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- page content -->
+  <script>
+    let martivi_ricxvi = '';
+
+    for (let number = 2; number < 20; number++) {
+      let isPrime = true;
+      for (let devisor = 2; devisor <= Math.sqrt(number); devisor++) {
+        if (number % devisor == 0) {
+          isPrime = false;
+          break;
+        }
+      }
+      if (isPrime == true)
+        martivi_ricxvi += number + ' ';
+    }
+
+    alert(martivi_ricxvi);
+  </script>
+</body>
+
 </html>
